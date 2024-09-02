@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber - Go Anywhere</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .login {
+            background-color: black;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px; 
+            width: 100%;
+            padding: 0 1%;
+        }
+        
+        nav img {
+            height: 60px;
+            width: 150px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            color: white;
+            display: inline-block;
+        }
+        nav li a {
+            font-size: 15px;
+            padding: 0 30px;
+            color: white;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            color: rgb(175, 113, 90);
+            transition: all 0.4s ease;
+        }
+        .quote {
+            color: white;
+            margin-top: 180px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 100px;
+            width: 800px;
+            height: 800px;
+        }
+        .head {
+            color: white;
+            font-size: 50px;
+        }
+        .cl1 {
+            display: flex;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-container i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: gray;
+        }
+        .large-input {
+            font-size: x-large;
+            width: 500px; 
+            height: 55px; 
+            border-radius: 10px;
+            padding-left: 40px; 
+        }
+      
+        .priceB {
+            font-size: x-large;
+            background-color: white;
+            color: black;
+            height: 60px;
+            width: 180px;
+            border-radius: 10px;
+        }
+        .reserve, .package {
+            margin-left: 10px;
+        }
+        .ride, .reserve, .package {
+            border: 1px solid transparent;
+            height: 5cm;
+            width: 13cm;
+            background-color: rgba(226, 226, 226, 0.673);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .suggestion {
+            border: 1px solid transparent;
+            margin-top: 40px;
+            margin-left: 100px;
+            display: flex;  
+        }  
+        .sug {
+            margin-top: 70px;
+            margin-left: 100px;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .b {
+            font-size: 23px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .ride-content, .reserve-content, .package-content {
+            display: flex;
+            align-items: center;
+        }
+        .ride-content img, .reserve-content img, .package-content img {
+            margin-right: 20px;
+        }
+        .ride-text, .reserve-text, .package-text {
+            font-size: 18px;
+            color: black;
+        }
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            padding: 2px 0;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <nav>
+            <img src="https://helios-i.mashable.com/imagery/articles/03y6VwlrZqnsuvnwR8CtGAL/hero-image.fill.size_1248x702.v1623372852.jpg" alt="Logo" height="500px" width="300px">
+            <ul>
+                <li><a href="#">RIDE</a></li>
+                <li><a href="#">DRIVE</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <main class="cl1">
+            <div class="quote">
+                <h1 class="head">GO ANYWHERE WITH<br>UBER</h1>
+                <h3>Request a ride, hop in, and go.</h3>
+                <div class="input-container">
+                    <i class='bx bx-map' aria-hidden="true"></i>
+                    <input type="text" name="fromL" placeholder="Enter Current Location" class="large-input" aria-label="Enter Current Location">
+                </div>
+                <div class="input-container">
+                    <i class='bx bx-map' aria-hidden="true"></i>
+                    <input type="text" name="toL" placeholder="Enter Destination" class="large-input" aria-label="Enter Destination">
+                </div>
+                <button class="priceB">See price</button>
+            </div>
+            <div class="photo">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_986,w_788/v1684852612/assets/ba/4947c1-b862-400e-9f00-668f4926a4a2/original/Ride-with-Uber.png" alt="Ride with Uber" height="800pxpx" width="500px">
+            </div>
+        </main>
+    </div>
+    <h1 class="sug">SUGGESTIONS</h1>
+    <section class="suggestion">
+        <article class="ride">
+            <div class="ride-content">
+                <img src="https://mobile-content.uber.com/launch-experience/ride.png" alt="Ride Image">
+                <div class="ride-text">
+                    <p class="b">Ride</p>
+                    <p>Quick and reliable rides at your fingertips. Whether you're commuting or just exploring, get to your destination with ease.</p>
+                </div>
+            </div>
+        </article>
+        <article class="reserve">
+            <div class="reserve-content">
+                <img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png" height="150px" width="150px" alt="Reserve Image">
+                <div class="reserve-text">
+                    <p class="b">Reserve</p>
+                    <p>Plan your ride in advance and make sure you have a vehicle ready when you need it.</p>
+                </div>
+            </div>        
+        </article>
+        <article class="package">
+            <div class="package-content">
+                <img src="https://mobile-content.uber.com/launch-experience/connect.png" alt="Package Image">
+                <div class="package-text">
+                    <p class="b">Package</p>
+                    <p>Send packages quickly and easily with reliable delivery options tailored to your needs.</p>
+                </div>
+            </div>        
+        </article>
+    </section>
+    <footer>
+        <p>&copy; 2024 Uber Technologies Inc. All Rights Reserved</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function validateInputs() {
+                const fromLocation = document.querySelector("input[name='fromL']").value.trim();
+                const toLocation = document.querySelector("input[name='toL']").value.trim();
+                if (fromLocation === "" || toLocation === "") {
+                    alert("Please fill in both location fields.");
+                    return false;
+                }
+                return true;
+            }
+            
+            function handlePriceButtonClick() {
+                if (validateInputs()) {
+                    alert("Price feature is not implemented yet. Check your input fields.");
+                }
+            }
+            
+            const priceButton = document.querySelector(".priceB");
+            if (priceButton) {
+                priceButton.addEventListener("click", handlePriceButtonClick);
+            }
+        });
